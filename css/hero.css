@@ -1990,7 +1990,10 @@
         width: 25px !important;
         padding: 3px 0 !important;
         font-size: 0.78rem !important;
-        border-radius: 5px !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
     }
 
     .multi-input-modern input[placeholder="YYYY"] {
@@ -2097,18 +2100,16 @@
     font-family: var(--font-body);
     font-weight: 600;
     color: #2a2a2a;
-    border: 1px solid rgba(217, 119, 6, 0.25);
-    border-radius: 8px;
-    background: #fffdfa;
+    border: none;
+    background: transparent;
+    outline: none;
     transition: all 0.3s ease;
 }
 .multi-input-modern input[placeholder="YYYY"] {
     width: 58px !important;
 }
 .multi-input-modern input:focus {
-    background: #ffffff;
-    border-color: #d97706;
-    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+    color: #d97706;
 }
 .multi-input-modern .sep {
     color: #d97706;
