@@ -886,6 +886,11 @@
    Responsive Media Queries for Landing Sections (Tablets & Mobile)
    ========================================================================== */
 @media (max-width: 1024px) {
+    .consultation-full-img {
+        height: auto !important;
+        max-height: 280px !important;
+        object-fit: contain !important;
+    }
     .problems-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
