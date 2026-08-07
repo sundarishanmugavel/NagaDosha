@@ -529,7 +529,7 @@
     display: grid;
     grid-template-columns: 2fr 1.2fr;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .remedies-cards {
@@ -576,6 +576,7 @@
     box-shadow: none;
     transition: transform 0.4s ease;
     background: transparent;
+    align-self: flex-start;
 }
 
 .consultation-img-wrapper:hover {
@@ -585,7 +586,7 @@
 .consultation-full-img {
     width: 100%;
     height: 340px;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
     display: block;
     border-radius: 16px;
@@ -886,6 +887,16 @@
    Responsive Media Queries for Landing Sections (Tablets & Mobile)
    ========================================================================== */
 @media (max-width: 1024px) {
+    .remedies-grid {
+        align-items: flex-start !important;
+    }
+    .consultation-img-wrapper {
+        align-self: flex-start !important;
+    }
+    .consultation-full-img {
+        object-fit: fill !important;
+        height: 340px !important;
+    }
     .problems-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
