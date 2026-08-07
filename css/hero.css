@@ -293,7 +293,7 @@
 
 .calculator-form-panel h2 {
     text-align: center;
-    font-family: 'Cinzel', 'Georgia', serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     color: #2c251e;
     font-weight: 600;
@@ -1024,7 +1024,7 @@
 }
 
 .cinematic-h1 {
-    font-family: 'Cinzel', 'Georgia', serif;
+    font-family: var(--font-heading);
     font-size: 2.6rem;
     /* Restored size since width is larger */
     font-weight: 800;
@@ -1097,8 +1097,7 @@
 }
 
 .anim-heading-gold {
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-heading);
     color: #d4af37;
     margin-bottom: 0.8rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1216,7 +1215,7 @@
 }
 
 .hero-main-title-new {
-    font-family: 'Cinzel', 'Georgia', serif;
+    font-family: var(--font-heading);
     font-size: 3.2rem;
     /* Slightly reduced to fit on one line */
     color: #1b0e35;
@@ -1493,8 +1492,7 @@
    Ultra-Premium Industry Bar Form
    ========================================================================== */
 .industry-bar-title {
-    text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-heading);
     color: white;
     text-shadow: 0 2px 10px rgba(0,0,0,0.3);
     font-size: 1.6rem;
@@ -2576,7 +2574,7 @@
         font-size: 1.75rem !important;
         color: #1b0e35 !important;
         text-align: center !important;
-        font-family: 'Cinzel', 'Playfair Display', serif !important;
+        font-family: var(--font-heading) !important;
         font-weight: 800 !important;
         margin-bottom: 0.5rem !important;
     }
