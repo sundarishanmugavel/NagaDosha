@@ -1914,22 +1914,91 @@
 
 @media (max-width: 600px) {
     .modern-form-grid {
-        grid-template-columns: 1fr !important;
-        gap: 12px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px 8px !important;
+    }
+
+    .modern-fg:nth-child(1),
+    .modern-fg:nth-child(2) {
+        grid-column: span 2 !important;
+    }
+
+    .modern-fg:nth-child(3),
+    .modern-fg:nth-child(4) {
+        grid-column: span 1 !important;
+    }
+
+    .modern-fg:nth-child(5),
+    .modern-fg:nth-child(6) {
+        grid-column: span 1 !important;
     }
 
     .btn-submit-modern {
-        grid-column: span 1 !important;
+        grid-column: span 2 !important;
         width: 100% !important;
+        padding: 12px 16px !important;
+        font-size: 0.95rem !important;
+        margin-top: 4px !important;
     }
 
     .premium-naga-form-container {
-        padding: 18px 14px !important;
+        padding: 14px 12px !important;
         border-radius: 14px !important;
     }
 
+    .premium-naga-title {
+        font-size: 1.35rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .om-divider {
+        margin-bottom: 12px !important;
+    }
+
     .calculator-container {
-        padding: 0 12px !important;
+        padding: 0 8px !important;
+    }
+
+    .modern-fg label {
+        font-size: 0.7rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .modern-input-wrapper {
+        border-radius: 10px !important;
+    }
+
+    .modern-input-wrapper > i {
+        left: 10px !important;
+        font-size: 0.88rem !important;
+    }
+
+    .modern-input-wrapper input,
+    .custom-select-trigger {
+        padding: 9px 8px 9px 30px !important;
+        font-size: 0.85rem !important;
+        height: auto !important;
+    }
+
+    .multi-input-modern {
+        padding: 5px 4px 5px 26px !important;
+        gap: 2px !important;
+        justify-content: space-between !important;
+    }
+
+    .multi-input-modern input {
+        width: 25px !important;
+        padding: 3px 0 !important;
+        font-size: 0.78rem !important;
+        border-radius: 5px !important;
+    }
+
+    .multi-input-modern input[placeholder="YYYY"] {
+        width: 35px !important;
+    }
+
+    .multi-input-modern .sep {
+        font-size: 0.75rem !important;
     }
 }
 
