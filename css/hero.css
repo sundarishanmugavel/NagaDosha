@@ -989,8 +989,8 @@
 
 .hero-container-cinematic {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 42% 58%;
+    gap: 1.5rem;
     align-items: center;
     width: 100%;
     max-width: 1350px;
@@ -1200,7 +1200,7 @@
     width: 100%;
     max-width: 700px;
     /* Increased to allow single-line heading */
-    margin-left: auto;
+    margin-left: -50px;
     z-index: 10;
     text-align: left;
     animation: fadeInUpMinimal 0.8s ease-out forwards;
