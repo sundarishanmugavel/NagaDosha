@@ -85,7 +85,7 @@
     width: 100%;
     height: 210px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     background: #f0ebe1;
     display: block;
 }
