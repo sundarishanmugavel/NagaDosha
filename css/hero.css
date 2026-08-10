@@ -1819,9 +1819,12 @@
     box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.8), 0 0 0 1px rgba(245, 158, 11, 0.15);
     padding: 30px 40px 24px 40px;
     max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 20;
+    box-sizing: border-box;
+    overflow: hidden;
     transition: box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
@@ -1905,34 +1908,28 @@
 
 @media (max-width: 768px) {
     .modern-form-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 14px !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+    .btn-submit-modern {
+        grid-column: span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
 
 @media (max-width: 600px) {
     .modern-form-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 10px 8px !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
     }
 
-    .modern-fg:nth-child(1),
-    .modern-fg:nth-child(2) {
-        grid-column: span 2 !important;
-    }
-
-    .modern-fg:nth-child(3),
-    .modern-fg:nth-child(4) {
-        grid-column: span 1 !important;
-    }
-
-    .modern-fg:nth-child(5),
-    .modern-fg:nth-child(6) {
+    .modern-fg {
         grid-column: span 1 !important;
     }
 
     .btn-submit-modern {
-        grid-column: span 2 !important;
+        grid-column: span 1 !important;
         width: 100% !important;
         max-width: 320px !important;
         padding: 12px 16px !important;
@@ -2487,13 +2484,6 @@
         display: inline-flex !important;
         align-self: center !important;
     }
-    .dosha-form-new {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px !important;
-    }
-    .btn-submit-modern {
-        grid-column: span 2 !important;
-    }
     .premium-naga-form-container {
         padding: 24px 18px !important;
     }
@@ -2632,7 +2622,7 @@
         box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.7) !important;
         animation: purplePulse 2s infinite cubic-bezier(0.66, 0, 0, 1) !important;
     }
-    .dosha-form-new {
+    .modern-form-grid {
         grid-template-columns: 1fr !important;
     }
     .btn-submit-modern {

@@ -6,19 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naga Dosha Calculator | AstroVed</title>
     <!-- Custom CSS (Split into components) -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/info-cards.css">
-    <link rel="stylesheet" href="css/landing-sections.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <!-- <link rel="stylesheet" href="css/main.css"> Commented out for now -->
+    <link rel="stylesheet" href="css/variables.css?v=3">
+    <link rel="stylesheet" href="css/base.css?v=3">
+    <link rel="stylesheet" href="css/navbar.css?v=3">
+    <link rel="stylesheet" href="css/hero.css?v=3">
+    <link rel="stylesheet" href="css/info-cards.css?v=3">
+    <link rel="stylesheet" href="css/landing-sections.css?v=3">
+    <link rel="stylesheet" href="css/footer.css?v=3">
+    <!-- <link rel="stylesheet" href="css/main.css?v=3"> Commented out for now -->
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" href="images/fav_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- MOBILE FORM FIX - inline styles to guarantee single-column on mobile -->
+    <style>
+        /* Prevent horizontal scroll on body level */
+        html, body {
+            overflow-x: hidden !important;
+        }
+
+        /* Calculator section: no overflow clipping (so form card shows above hero) */
+        #calculator-section {
+            width: 100% !important;
+            box-sizing: border-box !important;
+            overflow: visible !important;
+            position: relative !important;
+            z-index: 25 !important;
+        }
+
+        /* Inner container: clip only horizontally */
+        #calculator-section .container,
+        #calculator-section .calculator-container {
+            width: 100% !important;
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Form card: ensure it fits within viewport */
+        .premium-naga-form-container {
+            overflow: visible !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        /* On mobile: force single column, reduce side padding */
+        @media (max-width: 900px) {
+            .modern-form-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+                width: 100% !important;
+            }
+
+            .modern-fg {
+                grid-column: 1 / -1 !important;
+                width: 100% !important;
+            }
+
+            .btn-submit-modern {
+                grid-column: 1 / -1 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .premium-naga-form-container {
+                padding: 20px 16px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -206,9 +263,9 @@
 
         <!-- Dedicated Calculator Section -->
         <section id="calculator-section" class="calculator-section"
-            style="padding: 0; min-height: auto; margin: 0; background: transparent; display: none; position: relative; z-index: 20;">
+            style="padding: 0; min-height: auto; margin: 0; background: transparent; display: none; position: relative; z-index: 25;">
             <div class="container calculator-container form-animated-container"
-                style="max-width: 1350px; margin: -15px auto 10px auto; padding-bottom: 0;">
+                style="max-width: 1350px; margin: -15px auto 10px auto; padding: 0 16px 0 16px;"  >
 
                 <div class="premium-naga-form-container" id="nagaFormCard">
                     <button class="btn-dismiss" id="btnDismissForm"><i class="fa-solid fa-xmark"></i></button>
