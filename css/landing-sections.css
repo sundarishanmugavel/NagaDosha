@@ -529,7 +529,7 @@
     display: grid;
     grid-template-columns: 2fr 1.2fr;
     gap: 30px;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .remedies-cards {

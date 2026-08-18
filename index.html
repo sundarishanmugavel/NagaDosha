@@ -22,7 +22,8 @@
     <!-- MOBILE FORM FIX - inline styles to guarantee single-column on mobile -->
     <style>
         /* Prevent horizontal scroll on body level */
-        html, body {
+        html,
+        body {
             overflow-x: hidden !important;
         }
 
@@ -208,53 +209,29 @@
 
                 <!-- Right side form panel -->
                 <div class="hero-content-right">
-                    <h1 class="hero-main-title-new">Naga Dosha <span style="color: #f59e0b;">Calculator</span></h1>
+                    <!-- Main Title -->
+                    <h1 class="hero-title-premium">
+                        Naga Dosha <span class="gold-gradient">Calculator</span>
+                    </h1>
 
-                    <div class="hero-decorative-divider">
-                        <span class="divider-line"></span>
-                        <i class="fa-solid fa-om" style="color: #f59e0b; font-size: 1.2rem; margin: 0 15px;"></i>
-                        <span class="divider-line"></span>
+                    <!-- Decorative Line with Om -->
+                    <div class="hero-divider-premium">
+                        <span class="d-line-l"></span>
+                        <span class="om-symbol">ॐ</span>
+                        <span class="d-line-r"></span>
                     </div>
 
-                    <p class="hero-subtitle"
-                        style="background: transparent !important; border: none !important; padding: 0 !important; box-shadow: none !important;">
+                    <!-- Subtitle Text -->
+                    <p class="hero-subtitle-premium">
                         Facing unexplained delays in marriage, career obstacles, or relationship struggles? These could
-                        be silent symptoms of a hidden planetary affliction.</p>
+                        be silent symptoms of a hidden planetary affliction.
+                    </p>
 
-                    <div class="hero-feature-grid">
-                        <div class="hf-item">
-                            <i class="fa-solid fa-chart-pie" style="color: #f59e0b;"></i>
-                            <div>
-                                <strong>Accurate Analysis</strong>
-                                <span>Based on Vedic Astrology</span>
-                            </div>
-                        </div>
-                        <div class="hf-item">
-                            <i class="fa-solid fa-file-invoice" style="color: #f59e0b;"></i>
-                            <div>
-                                <strong>Personalized Report</strong>
-                                <span>Detailed insights for your chart</span>
-                            </div>
-                        </div>
-                        <div class="hf-item">
-                            <i class="fa-solid fa-thumbs-up" style="color: #f59e0b;"></i>
-                            <div>
-                                <strong>Remedies & Solutions</strong>
-                                <span>Effective & easy to follow</span>
-                            </div>
-                        </div>
-                        <div class="hf-item">
-                            <i class="fa-solid fa-building-columns" style="color: #f59e0b;"></i>
-                            <div>
-                                <strong>Trusted by Millions</strong>
-                                <span>Millions of devotees worldwide</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="#calculator-section" id="btn-show-calculator" class="btn-hero-gold"
-                        style="display: inline-block; text-decoration: none; margin-top: 1.5rem;">Want to check freely
-                        &rarr;</a>
+                    <!-- Main CTA Button -->
+                    <a href="#calculator-section" id="btn-show-calculator" class="btn-cta-premium">
+                        <span>Check Your Dosha Free</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -265,7 +242,7 @@
         <section id="calculator-section" class="calculator-section"
             style="padding: 0; min-height: auto; margin: 0; background: transparent; display: none; position: relative; z-index: 25;">
             <div class="container calculator-container form-animated-container"
-                style="max-width: 1350px; margin: -15px auto 10px auto; padding: 0 16px 0 16px;"  >
+                style="max-width: 1350px; margin: -15px auto 10px auto; padding: 0 16px 0 16px;">
 
                 <div class="premium-naga-form-container" id="nagaFormCard">
                     <button class="btn-dismiss" id="btnDismissForm"><i class="fa-solid fa-xmark"></i></button>
@@ -1082,15 +1059,32 @@
                     </div>
                 </div>
 
-                <!-- Consultation Banner Image Only -->
-                <a href="https://www.astroved.com/AstrologerScheduler.aspx?id=115&promo=SL_SP_LAC-1" target="_blank"
-                    class="consultation-img-wrapper">
-                    <picture style="width: 100%; display: block;">
-                        <source media="(max-width: 768px)" srcset="images/c1.png">
-                        <img src="images/image.png" alt="Book a Consultation with Our Astrologer"
-                            class="consultation-full-img">
-                    </picture>
-                </a>
+                <!-- Real Page Element Consultation Card -->
+                <div class="consultation-card-real">
+                    <div class="consultation-card-bg">
+                        <img src="images/shivan.png" alt="Astrologer Consultation" class="consultation-bg-art">
+                        <div class="consultation-overlay"></div>
+                    </div>
+                    <div class="consultation-card-content">
+
+                        <h3 class="consultation-heading">
+                            Talk To Our Astrologer To Know More About <span class="text-gold-accent">Naga Dosha</span>
+                        </h3>
+                        <p class="consultation-desc">
+                            Get detailed insights and powerful remedies to reduce its effects on your life.
+                        </p>
+                        <div class="consultation-features">
+                            <div class="cf-item"><i class="fa-solid fa-circle-check"></i> 1-on-1 Personalized Session
+                            </div>
+                            <div class="cf-item"><i class="fa-solid fa-circle-check"></i> Accurate Dosha Analysis</div>
+                        </div>
+                        <a href="https://www.astroved.com/AstrologerScheduler.aspx?id=115&promo=SL_SP_LAC-1"
+                            target="_blank" class="btn-consultation-real">
+                            <span>Talk to Astrologer</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1192,10 +1186,11 @@
                         <div class="related-cta-box">
                             <div class="rcb-header-line">
                                 <div class="rcb-icon"><i class="fa-solid fa-user-astronaut"></i></div>
-                                <strong class="rcb-title">Talk to Astrologer</strong>
+                                <strong class="rcb-title">Ask About Naga Dosha</strong>
                             </div>
                             <a href="https://www.astroved.com/AstrologerScheduler.aspx?id=115&promo=SL_SP_LAC-1"
-                                target="_blank" class="rcb-btn">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                                target="_blank" class="rcb-btn">Consults Astrologer <i
+                                    class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
